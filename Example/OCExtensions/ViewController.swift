@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     @IBAction func addBadgeTouched(sender: AnyObject) {
         cardboardImage.badgeCount = 1
+        cardboardImage.badgeSize = 36
     }
 
 }
