@@ -16,7 +16,7 @@ public extension UIView {
     
     public var badgeCount: Int? {
         get {
-            return badgeCount
+            return self.badgeCount
         }
         set {
             guard let newValue = newValue where newValue > 0 else {
@@ -30,7 +30,7 @@ public extension UIView {
     
     public var badgeSize: CGFloat? {
         get {
-            return badgeSize
+            return self.badgeSize
         }
         set {
             badgeInstance.updateSize(newValue ?? defaultBadgeSize)
@@ -39,7 +39,7 @@ public extension UIView {
     
     public var badgeOffset: CGPoint? {
         get {
-            return badgeOffset
+            return self.badgeOffset
         }
         set {
             badgeInstance.updateOffset(newValue ?? defaultBadgeOffset)
