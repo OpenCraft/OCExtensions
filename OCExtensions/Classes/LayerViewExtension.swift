@@ -6,11 +6,11 @@
 //
 //
 
-import Foundation
+import UIKit
 
-extension UIView {
+public extension UIView {
     
-    @IBInspectable var corner: CGFloat {
+    @IBInspectable public  var corner: CGFloat {
         get {
             return layer.cornerRadius
         }
@@ -20,7 +20,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable var borderWidth: CGFloat {
+    @IBInspectable public  var borderWidth: CGFloat {
         get {
             return layer.borderWidth
         }
@@ -29,7 +29,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable var borderColor: UIColor {
+    @IBInspectable public  var borderColor: UIColor {
         get {
             return UIColor(CGColor: layer.borderColor ?? UIColor.clearColor().CGColor)
         }

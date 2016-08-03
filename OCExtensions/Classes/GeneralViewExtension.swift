@@ -6,15 +6,15 @@
 //
 //
 
-import Foundation
+import UIKit
 
-extension UIView {
+public extension UIView {
     
-    static func loadFromNibNamed(nibNamed: String, bundle: NSBundle? = nil) -> UIView? {
+    public static func loadFromNibNamed(nibNamed: String, bundle: NSBundle? = nil) -> UIView? {
         return UINib(nibName: nibNamed, bundle: bundle).instantiateWithOwner(nil, options: nil)[0] as? UIView
     }
     
-    func fillSuperview() {
+    public func fillSuperview() {
         if let superview = self.superview {
             let subview = self
             subview.translatesAutoresizingMaskIntoConstraints = false
@@ -30,7 +30,7 @@ extension UIView {
         }
     }
     
-    func fill(inSuperview superview: UIView) {
+    public func fill(inSuperview superview: UIView) {
         if superview.subviews.indexOf(self) == nil {
             superview.addSubview(self)
         }

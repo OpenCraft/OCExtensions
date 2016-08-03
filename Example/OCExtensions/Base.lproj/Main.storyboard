@@ -1,25 +1,60 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="OCExtensions_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardboard" translatesAutoresizingMaskIntoConstraints="NO" id="vct-tk-B6x">
+                                <rect key="frame" x="96" y="176" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="Af3-Bm-gzG"/>
+                                    <constraint firstAttribute="height" constant="128" id="zsk-IZ-Mfq"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHl-fp-gQX">
+                                <rect key="frame" x="96" y="312" width="128" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="azW-Jb-7Nx"/>
+                                    <constraint firstAttribute="height" constant="42" id="cOy-Uv-aex"/>
+                                </constraints>
+                                <state key="normal" title="Add badge"/>
+                                <connections>
+                                    <action selector="addBadgeTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fhK-vU-ch8"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aHl-fp-gQX" firstAttribute="centerX" secondItem="vct-tk-B6x" secondAttribute="centerX" id="VSV-fs-cDu"/>
+                            <constraint firstItem="vct-tk-B6x" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="XOM-Ml-iwZ"/>
+                            <constraint firstItem="vct-tk-B6x" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="p9C-wa-1Lv"/>
+                            <constraint firstItem="aHl-fp-gQX" firstAttribute="top" secondItem="vct-tk-B6x" secondAttribute="bottom" constant="8" id="xHk-MV-z9L"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="cardboardImage" destination="vct-tk-B6x" id="QQo-8K-1aW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cardboard" width="1024" height="1024"/>
+    </resources>
 </document>

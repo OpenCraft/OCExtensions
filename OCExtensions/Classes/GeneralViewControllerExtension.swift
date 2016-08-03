@@ -6,17 +6,17 @@
 //
 //
 
-import Foundation
+import UIKit
 
-extension UIViewController {
+public extension UIViewController {
     
-    func showAlert(message: String, title: String? = nil, okHandler: ((UIAlertAction) -> Void)? = nil) {
+    public func showAlert(message: String, title: String? = nil, okHandler: ((UIAlertAction) -> Void)? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: okHandler))
         presentViewController(alert, animated: true, completion: nil)
     }
     
-    func addChildViewController(viewController: UIViewController, inContainerView container: UIView) {
+    public func addChildViewController(viewController: UIViewController, inContainerView container: UIView) {
         addChildViewController(viewController)
         viewController.view.fill(inSuperview: container)
     }
