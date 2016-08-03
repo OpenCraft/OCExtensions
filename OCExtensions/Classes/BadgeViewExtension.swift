@@ -8,6 +8,7 @@
 
 import UIKit
 
+private let defaultBadgeOffset = CGPoint(x: 0, y: 0)
 private let defaultBadgeSize: CGFloat = 20
 private let tagIdentifier = 998877
 
@@ -33,6 +34,15 @@ public extension UIView {
         }
         set {
             badgeInstance.updateSize(newValue ?? defaultBadgeSize)
+        }
+    }
+    
+    public var badgeOffset: CGPoint? {
+        get {
+            return badgeOffset
+        }
+        set {
+            badgeInstance.updateOffset(newValue ?? defaultBadgeOffset)
         }
     }
     
@@ -70,5 +80,9 @@ private extension UILabel {
         self.center = center
         self.layer.cornerRadius = newSize/2
         self.font = UIFont.systemFontOfSize(newSize/2)
+    }
+    
+    func updateOffset(newOffset: CGPoint) {
+        self.frame.offsetInPlace(dx: newOffset.x, dy: newOffset.y)
     }
 }

@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBAction func addBadgeTouched(sender: AnyObject) {
         cardboardImage.badgeCount = 1
         cardboardImage.badgeSize = 36
+        cardboardImage.badgeOffset = CGPoint(x: -18, y: 18)
     }
 
 }
