@@ -1,0 +1,16 @@
+PODS:
+  - OCExtensions (0.1.0)
+
+DEPENDENCIES:
+  - OCExtensions (from `../`)
+
+EXTERNAL SOURCES:
+  OCExtensions:
+    :path: ../
+
+SPEC CHECKSUMS:
+  OCExtensions: 9ea1c84683f8d3fc52283448a168a4778fe8657e
+
+PODFILE CHECKSUM: f049578b21e0c8e602e186cdd1e6832741239751
+
+COCOAPODS: 1.0.1
