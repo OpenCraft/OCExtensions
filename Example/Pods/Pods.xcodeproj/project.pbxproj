@@ -11,7 +11,6 @@
 		1BEC2470FF3079EF033B92F7179D5892 /* GeneralViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9000F27B4A4BC1514A8F309309A1B /* GeneralViewControllerExtension.swift */; };
 		206DCD6496FA3DB7198AE5CEDE51FEB4 /* LayerViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EDD8D0D244FD8B9C15D49259521C44 /* LayerViewExtension.swift */; };
 		26FD00AE200FDEED53A605FA5A3DA7FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		2D77FBBA1D5237E400DC21BC /* OCUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D77FBB91D5237E400DC21BC /* OCUtils.swift */; };
 		46AC3F6CFCAD9EF0CB675F1D47110910 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		4B78373B8385627B1987393401B5F0EF /* Pods-OCExtensions_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAF9E2E1FB12CBF7FA3C1C52762A676 /* Pods-OCExtensions_Example-dummy.m */; };
 		590FCB95B4BC3400FCB464E3788D6352 /* Pods-OCExtensions_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C97DC1D397047E2FE90731C61AC0EB3 /* Pods-OCExtensions_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,7 +37,6 @@
 		164063DD575533A1482EC8177A2BF7CE /* GeneralViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GeneralViewExtension.swift; sourceTree = "<group>"; };
 		1C7BE6DFA13976B2395639F62D465F60 /* Pods-OCExtensions_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCExtensions_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1DD9000F27B4A4BC1514A8F309309A1B /* GeneralViewControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GeneralViewControllerExtension.swift; sourceTree = "<group>"; };
-		2D77FBB91D5237E400DC21BC /* OCUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCUtils.swift; sourceTree = "<group>"; };
 		2FF374394B28C32487528AAA95A5529B /* Pods-OCExtensions_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCExtensions_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		306F9233AA034A6C09E114E53A10E0E4 /* Pods-OCExtensions_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OCExtensions_Tests-resources.sh"; sourceTree = "<group>"; };
 		336D2AFBF57DB3922BEB80628EFE6C0C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -224,7 +222,6 @@
 				1DD9000F27B4A4BC1514A8F309309A1B /* GeneralViewControllerExtension.swift */,
 				164063DD575533A1482EC8177A2BF7CE /* GeneralViewExtension.swift */,
 				E4EDD8D0D244FD8B9C15D49259521C44 /* LayerViewExtension.swift */,
-				2D77FBB91D5237E400DC21BC /* OCUtils.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -366,7 +363,6 @@
 				77C5E4279419165D8B4DB9F5E83D8327 /* GeneralViewExtension.swift in Sources */,
 				206DCD6496FA3DB7198AE5CEDE51FEB4 /* LayerViewExtension.swift in Sources */,
 				0AE9FFE98C7B8ED2B34AD3E7CF5FB1B5 /* OCExtensions-dummy.m in Sources */,
-				2D77FBBA1D5237E400DC21BC /* OCUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

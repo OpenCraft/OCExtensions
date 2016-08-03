@@ -21,4 +21,13 @@ public extension UIViewController {
         viewController.view.fill(inSuperview: container)
     }
     
+    public static var topMostViewController: UIViewController? {
+        var topMost = UIApplication.sharedApplication().keyWindow?.rootViewController
+        while let presented = topMost?.presentedViewController {
+            topMost = presented
+        }
+        
+        return topMost
+    }
+    
 }
