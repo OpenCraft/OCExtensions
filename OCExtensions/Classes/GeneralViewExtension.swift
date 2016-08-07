@@ -61,4 +61,8 @@ public extension UIView {
         self.centerSuperview(withSize: size)
     }
     
+    public func removeAllConstraints() {
+        removeConstraints(self.constraints)
+    }
+    
 }
