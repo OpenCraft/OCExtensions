@@ -18,7 +18,7 @@ public extension UIViewController {
     
     public func addChildViewController(viewController: UIViewController, inContainerView container: UIView) {
         addChildViewController(viewController)
-        viewController.view.fill(inSuperview: container)
+        viewController.view.fillInSuperview(container)
     }
     
     public static var topMostViewController: UIViewController? {
