@@ -13,7 +13,7 @@ public extension UIImage {
     convenience init?(color: UIColor, size: CGSize? = nil) {
         
         let size = size ?? CGSize(width: 1, height: 1)
-        var rect = CGRect(origin: CGPoint.zero, size: size)
+        let rect = CGRect(origin: CGPoint.zero, size: size)
         
         UIGraphicsBeginImageContext(size);
         let path = UIBezierPath(rect: rect)
