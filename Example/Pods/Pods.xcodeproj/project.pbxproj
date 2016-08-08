@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D1FD4731D58FB0B00D4F69C /* GeneralColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1FD4721D58FB0B00D4F69C /* GeneralColorExtensions.swift */; };
-		35E71A174A80C127E1AACAD876DE52E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		0931EB9133DD27885BE095204B12F3D9 /* GeneralImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C0128A713F96DFA0608B06011EEF6D /* GeneralImageExtension.swift */; };
 		46AC3F6CFCAD9EF0CB675F1D47110910 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		4B78373B8385627B1987393401B5F0EF /* Pods-OCExtensions_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAF9E2E1FB12CBF7FA3C1C52762A676 /* Pods-OCExtensions_Example-dummy.m */; };
-		51579634D38DA0A9C63FE924388EF6D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
-		52691ACFC2D80CADE82A469B8685C2E0 /* BadgeViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF57A51C2EE0947DB73E267FEF9C209 /* BadgeViewExtension.swift */; };
+		5506379D87DDCF762740BAD977580350 /* BadgeViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF53C97B992BCC2C8BA7CB9B482E88B3 /* BadgeViewExtension.swift */; };
+		559EC4F93888A0C87CBB840BFF18F9F2 /* GeneralViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3293132E1139806BFEA4DF6CC0EB65F2 /* GeneralViewControllerExtension.swift */; };
+		56F8D2AE7D829C758CC79AFA3CE7DEFA /* OCExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84960E71D77111C0BB247CF6EE47C99D /* OCExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		590FCB95B4BC3400FCB464E3788D6352 /* Pods-OCExtensions_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C97DC1D397047E2FE90731C61AC0EB3 /* Pods-OCExtensions_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D3763FB2CC93EAB32BC0E454EE58D25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
 		925A1FFE87EF0BEBBC691B9AB50F2B89 /* Pods-OCExtensions_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DEC5BB0FE3D201199C312907C34EF6 /* Pods-OCExtensions_Tests-dummy.m */; };
 		9DDF7A4B52BE3F0054188EE8C52B8C95 /* Pods-OCExtensions_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 377645378A76D3937F8091F64AD87EFD /* Pods-OCExtensions_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD8ACDB50EFAA365EFE580E60B7B8FBE /* LayerViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC33FC3F23987A389FC82D68AC02BD6 /* LayerViewExtension.swift */; };
+		A309EED46FAB0E0289C5DBB2BC001552 /* OCExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 923447ABCB30618ED854FAC8A6586720 /* OCExtensions-dummy.m */; };
+		AD024590F8488B31DACB17ACD96F9293 /* GeneralViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782868DF8385AA1B729C2C581570F082 /* GeneralViewExtension.swift */; };
+		BCA563AE200C086E8FE12472CFEE4246 /* GeneralColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A74F726AEC9D2A1009B7D6FC67CB76 /* GeneralColorExtensions.swift */; };
+		C0C4FFDA7D8FD422D9A214C6236FC829 /* LayerViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55572122F13CE53ED55D481FE21A2C7B /* LayerViewExtension.swift */; };
 		C158665C28151876DEAD0CEF4743A154 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		C9CE92DD9284F5FC323D51DEE7AEC9EF /* GeneralImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FF753D932223927B381EB43965BECD /* GeneralImageExtension.swift */; };
-		E13F7F97F3DDCE73D337BA400D39B4E9 /* GeneralViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F1E848D8AA2FE8056E0A8249DB0E33 /* GeneralViewControllerExtension.swift */; };
-		F21FB184F02279B562A01AA842988170 /* OCExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 923447ABCB30618ED854FAC8A6586720 /* OCExtensions-dummy.m */; };
-		FE4CF0DB0517F2FD73F3452D983F5EFC /* GeneralViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F479AA550EFE12059D6E96381BC00E /* GeneralViewExtension.swift */; };
-		FFEFA9B469E3BA5EA3951E8F33DB0429 /* OCExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84960E71D77111C0BB247CF6EE47C99D /* OCExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE0A72DA788133452D06EBB7151A79D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,28 +30,27 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2769D793C66DCFE0604DF1735EE4FCAD;
+			remoteGlobalIDString = 6965B238D450434E7201195E3853C231;
 			remoteInfo = OCExtensions;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1C7BE6DFA13976B2395639F62D465F60 /* Pods-OCExtensions_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCExtensions_Example.release.xcconfig"; sourceTree = "<group>"; };
-		24F479AA550EFE12059D6E96381BC00E /* GeneralViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GeneralViewExtension.swift; sourceTree = "<group>"; };
-		2D1FD4721D58FB0B00D4F69C /* GeneralColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralColorExtensions.swift; sourceTree = "<group>"; };
-		2DC33FC3F23987A389FC82D68AC02BD6 /* LayerViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayerViewExtension.swift; sourceTree = "<group>"; };
 		2FF374394B28C32487528AAA95A5529B /* Pods-OCExtensions_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCExtensions_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		306F9233AA034A6C09E114E53A10E0E4 /* Pods-OCExtensions_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OCExtensions_Tests-resources.sh"; sourceTree = "<group>"; };
+		3293132E1139806BFEA4DF6CC0EB65F2 /* GeneralViewControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GeneralViewControllerExtension.swift; sourceTree = "<group>"; };
 		336D2AFBF57DB3922BEB80628EFE6C0C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		377645378A76D3937F8091F64AD87EFD /* Pods-OCExtensions_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OCExtensions_Tests-umbrella.h"; sourceTree = "<group>"; };
 		3C800B698763F750423413B7A89CA130 /* Pods-OCExtensions_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCExtensions_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		41A2B84D34C6B5FEF9C4896456B24F45 /* Pods-OCExtensions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCExtensions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		48995BE98B823941FFF3324713AAEEE0 /* OCExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE384D7AF97D8D698ABE33011D2E3D6 /* OCExtensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OCExtensions.xcconfig; sourceTree = "<group>"; };
-		4FF57A51C2EE0947DB73E267FEF9C209 /* BadgeViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BadgeViewExtension.swift; sourceTree = "<group>"; };
+		55572122F13CE53ED55D481FE21A2C7B /* LayerViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayerViewExtension.swift; sourceTree = "<group>"; };
 		5C97DC1D397047E2FE90731C61AC0EB3 /* Pods-OCExtensions_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OCExtensions_Example-umbrella.h"; sourceTree = "<group>"; };
 		62EA555C1B0E29E72F8597413294D756 /* Pods-OCExtensions_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OCExtensions_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		652C73C4D541AD55912A4B596CCDCD6F /* Pods-OCExtensions_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCExtensions_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		782868DF8385AA1B729C2C581570F082 /* GeneralViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GeneralViewExtension.swift; sourceTree = "<group>"; };
 		83190649A2D73FA4B04495AAD04A0BCC /* Pods_OCExtensions_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCExtensions_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84960E71D77111C0BB247CF6EE47C99D /* OCExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCExtensions-umbrella.h"; sourceTree = "<group>"; };
 		923447ABCB30618ED854FAC8A6586720 /* OCExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OCExtensions-dummy.m"; sourceTree = "<group>"; };
@@ -67,25 +66,17 @@
 		BEF4B63D7F0F1D7A5B24C73EA8F39F90 /* Pods-OCExtensions_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OCExtensions_Example-resources.sh"; sourceTree = "<group>"; };
 		C0A760F8FFC822B1DA979C7BC9B49C22 /* Pods-OCExtensions_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OCExtensions_Example.modulemap"; sourceTree = "<group>"; };
 		C3424E27A35AC0AD7C8E609913C4B9D7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4C0128A713F96DFA0608B06011EEF6D /* GeneralImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GeneralImageExtension.swift; sourceTree = "<group>"; };
 		C6786CFB1DBACE413FA6253A4CCBA40D /* OCExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCExtensions-prefix.pch"; sourceTree = "<group>"; };
 		CA6BB819D73AC4CEFB0F0626DC5C2018 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6DEC5BB0FE3D201199C312907C34EF6 /* Pods-OCExtensions_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OCExtensions_Tests-dummy.m"; sourceTree = "<group>"; };
+		DF53C97B992BCC2C8BA7CB9B482E88B3 /* BadgeViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BadgeViewExtension.swift; sourceTree = "<group>"; };
 		E1426CC6088D734E0431904A33146A24 /* Pods-OCExtensions_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OCExtensions_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		E3F1E848D8AA2FE8056E0A8249DB0E33 /* GeneralViewControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GeneralViewControllerExtension.swift; sourceTree = "<group>"; };
+		E2A74F726AEC9D2A1009B7D6FC67CB76 /* GeneralColorExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GeneralColorExtensions.swift; sourceTree = "<group>"; };
 		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		E8FF753D932223927B381EB43965BECD /* GeneralImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GeneralImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2299D04B52F31703E1B1321408D114BB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				35E71A174A80C127E1AACAD876DE52E6 /* Foundation.framework in Frameworks */,
-				51579634D38DA0A9C63FE924388EF6D8 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		88CE4F56B82BE1E36DFE0868B2A99BAD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,42 +93,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AFDEAAB2BC30B78C932C88EDAC5D8813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0A72DA788133452D06EBB7151A79D0 /* Foundation.framework in Frameworks */,
+				8D3763FB2CC93EAB32BC0E454EE58D25 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09E584966E53D3EC1A8A74151BFD6CD7 /* ViewController */ = {
+		1D2E2ED4C25EF01BB97018C62B879F49 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E3F1E848D8AA2FE8056E0A8249DB0E33 /* GeneralViewControllerExtension.swift */,
+				3293132E1139806BFEA4DF6CC0EB65F2 /* GeneralViewControllerExtension.swift */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		181A4715E8CE8A3F26313DF281C48C76 /* OCExtensions */ = {
-			isa = PBXGroup;
-			children = (
-				3C9BFFA1E22B2B526F4E55CB23EF8703 /* Classes */,
-			);
-			path = OCExtensions;
-			sourceTree = "<group>";
-		};
-		2D1FD4711D58FAF900D4F69C /* Color */ = {
-			isa = PBXGroup;
-			children = (
-				2D1FD4721D58FB0B00D4F69C /* GeneralColorExtensions.swift */,
-			);
-			name = Color;
-			sourceTree = "<group>";
-		};
-		3C9BFFA1E22B2B526F4E55CB23EF8703 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				2D1FD4711D58FAF900D4F69C /* Color */,
-				D98D5D06A46A670040FE5B122DA2964D /* Image */,
-				B4F0C7CF9F7BAF87AEA3311DCAB0AC46 /* View */,
-				09E584966E53D3EC1A8A74151BFD6CD7 /* ViewController */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -201,7 +174,7 @@
 		5C469382C1E6DAB53B8EBE61EC7C4832 /* OCExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				181A4715E8CE8A3F26313DF281C48C76 /* OCExtensions */,
+				AA40AF93648D1CCA4311D72204787567 /* OCExtensions */,
 				44BA7306A6B0DCB95B0D1B2850FA03D5 /* Support Files */,
 			);
 			name = OCExtensions;
@@ -246,22 +219,41 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B4F0C7CF9F7BAF87AEA3311DCAB0AC46 /* View */ = {
+		8DD348BE943FFA4184969DA8938C65DE /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				4FF57A51C2EE0947DB73E267FEF9C209 /* BadgeViewExtension.swift */,
-				24F479AA550EFE12059D6E96381BC00E /* GeneralViewExtension.swift */,
-				2DC33FC3F23987A389FC82D68AC02BD6 /* LayerViewExtension.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		D98D5D06A46A670040FE5B122DA2964D /* Image */ = {
-			isa = PBXGroup;
-			children = (
-				E8FF753D932223927B381EB43965BECD /* GeneralImageExtension.swift */,
+				C4C0128A713F96DFA0608B06011EEF6D /* GeneralImageExtension.swift */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		A7803FF3D2E6D226275F3035A30B3D2A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E2A74F726AEC9D2A1009B7D6FC67CB76 /* GeneralColorExtensions.swift */,
+				8DD348BE943FFA4184969DA8938C65DE /* Image */,
+				B18A08EA5720A31FBD61234BAE703A1C /* View */,
+				1D2E2ED4C25EF01BB97018C62B879F49 /* ViewController */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AA40AF93648D1CCA4311D72204787567 /* OCExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7803FF3D2E6D226275F3035A30B3D2A /* Classes */,
+			);
+			path = OCExtensions;
+			sourceTree = "<group>";
+		};
+		B18A08EA5720A31FBD61234BAE703A1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF53C97B992BCC2C8BA7CB9B482E88B3 /* BadgeViewExtension.swift */,
+				782868DF8385AA1B729C2C581570F082 /* GeneralViewExtension.swift */,
+				55572122F13CE53ED55D481FE21A2C7B /* LayerViewExtension.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
@@ -276,14 +268,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		00780D3890884B4D78E6D82264AFD7DA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FFEFA9B469E3BA5EA3951E8F33DB0429 /* OCExtensions-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2267FD3B08DC84DF2F4B76B869D5A838 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -300,16 +284,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		983B1A2BFFF9705A61D3FFEC99CA6AA5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56F8D2AE7D829C758CC79AFA3CE7DEFA /* OCExtensions-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2769D793C66DCFE0604DF1735EE4FCAD /* OCExtensions */ = {
+		6965B238D450434E7201195E3853C231 /* OCExtensions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BB642D745AF1A1DD666C0FD3792CFA2 /* Build configuration list for PBXNativeTarget "OCExtensions" */;
+			buildConfigurationList = EA54D8034E730A68AE622F68423C6C5A /* Build configuration list for PBXNativeTarget "OCExtensions" */;
 			buildPhases = (
-				10D2413BDF9E136EA2E862DF047282A2 /* Sources */,
-				2299D04B52F31703E1B1321408D114BB /* Frameworks */,
-				00780D3890884B4D78E6D82264AFD7DA /* Headers */,
+				33AEF003BD1527AE68AD31FE55477B54 /* Sources */,
+				AFDEAAB2BC30B78C932C88EDAC5D8813 /* Frameworks */,
+				983B1A2BFFF9705A61D3FFEC99CA6AA5 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -376,7 +368,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2769D793C66DCFE0604DF1735EE4FCAD /* OCExtensions */,
+				6965B238D450434E7201195E3853C231 /* OCExtensions */,
 				BAE109265C4A787179F11BE97DEACA2D /* Pods-OCExtensions_Example */,
 				901A48D898323B5A695231300A70D9CD /* Pods-OCExtensions_Tests */,
 			);
@@ -384,17 +376,17 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		10D2413BDF9E136EA2E862DF047282A2 /* Sources */ = {
+		33AEF003BD1527AE68AD31FE55477B54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52691ACFC2D80CADE82A469B8685C2E0 /* BadgeViewExtension.swift in Sources */,
-				C9CE92DD9284F5FC323D51DEE7AEC9EF /* GeneralImageExtension.swift in Sources */,
-				E13F7F97F3DDCE73D337BA400D39B4E9 /* GeneralViewControllerExtension.swift in Sources */,
-				FE4CF0DB0517F2FD73F3452D983F5EFC /* GeneralViewExtension.swift in Sources */,
-				AD8ACDB50EFAA365EFE580E60B7B8FBE /* LayerViewExtension.swift in Sources */,
-				2D1FD4731D58FB0B00D4F69C /* GeneralColorExtensions.swift in Sources */,
-				F21FB184F02279B562A01AA842988170 /* OCExtensions-dummy.m in Sources */,
+				5506379D87DDCF762740BAD977580350 /* BadgeViewExtension.swift in Sources */,
+				BCA563AE200C086E8FE12472CFEE4246 /* GeneralColorExtensions.swift in Sources */,
+				0931EB9133DD27885BE095204B12F3D9 /* GeneralImageExtension.swift in Sources */,
+				559EC4F93888A0C87CBB840BFF18F9F2 /* GeneralViewControllerExtension.swift in Sources */,
+				AD024590F8488B31DACB17ACD96F9293 /* GeneralViewExtension.swift in Sources */,
+				C0C4FFDA7D8FD422D9A214C6236FC829 /* LayerViewExtension.swift in Sources */,
+				A309EED46FAB0E0289C5DBB2BC001552 /* OCExtensions-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +412,7 @@
 		A076B06BE4415E968D9A2A82EEB82C97 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OCExtensions;
-			target = 2769D793C66DCFE0604DF1735EE4FCAD /* OCExtensions */;
+			target = 6965B238D450434E7201195E3853C231 /* OCExtensions */;
 			targetProxy = 0A972E6F1BD035D3E358F5752751A985 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -502,7 +494,7 @@
 			};
 			name = Debug;
 		};
-		81A895E2A3BE0093138074EEE642FB53 /* Debug */ = {
+		618BF3BA84364CC7F6D73B6E448F1535 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4AE384D7AF97D8D698ABE33011D2E3D6 /* OCExtensions.xcconfig */;
 			buildSettings = {
@@ -603,35 +595,6 @@
 			};
 			name = Release;
 		};
-		AC2CE97CCC59B972A9B6C27320A69CD4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AE384D7AF97D8D698ABE33011D2E3D6 /* OCExtensions.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/OCExtensions/OCExtensions-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OCExtensions/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/OCExtensions/OCExtensions.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = OCExtensions;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		B2323CAAE12A0345AD775484C5B611D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9648DB57B622AB658ED4FC18810132CC /* Pods-OCExtensions_Tests.release.xcconfig */;
@@ -698,6 +661,35 @@
 			};
 			name = Release;
 		};
+		F4D38611EA7B45E10A8F7F111FD56426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AE384D7AF97D8D698ABE33011D2E3D6 /* OCExtensions.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OCExtensions/OCExtensions-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OCExtensions/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OCExtensions/OCExtensions.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = OCExtensions;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -728,11 +720,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BB642D745AF1A1DD666C0FD3792CFA2 /* Build configuration list for PBXNativeTarget "OCExtensions" */ = {
+		EA54D8034E730A68AE622F68423C6C5A /* Build configuration list for PBXNativeTarget "OCExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				81A895E2A3BE0093138074EEE642FB53 /* Debug */,
-				AC2CE97CCC59B972A9B6C27320A69CD4 /* Release */,
+				618BF3BA84364CC7F6D73B6E448F1535 /* Debug */,
+				F4D38611EA7B45E10A8F7F111FD56426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
