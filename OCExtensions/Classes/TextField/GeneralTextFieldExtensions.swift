@@ -14,4 +14,8 @@ public extension UITextField {
         return text ?? ""
     }
     
+    public var isEmpty: Bool {
+        return textValue.isEmpty
+    }
+    
 }
