@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0931EB9133DD27885BE095204B12F3D9 /* GeneralImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C0128A713F96DFA0608B06011EEF6D /* GeneralImageExtension.swift */; };
+		2D4A355C1D6116DF00A6FAA6 /* GeneralColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4A355B1D6116DF00A6FAA6 /* GeneralColorExtensions.swift */; };
 		46AC3F6CFCAD9EF0CB675F1D47110910 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		4B78373B8385627B1987393401B5F0EF /* Pods-OCExtensions_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAF9E2E1FB12CBF7FA3C1C52762A676 /* Pods-OCExtensions_Example-dummy.m */; };
 		5506379D87DDCF762740BAD977580350 /* BadgeViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF53C97B992BCC2C8BA7CB9B482E88B3 /* BadgeViewExtension.swift */; };
@@ -19,7 +20,6 @@
 		9DDF7A4B52BE3F0054188EE8C52B8C95 /* Pods-OCExtensions_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 377645378A76D3937F8091F64AD87EFD /* Pods-OCExtensions_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A309EED46FAB0E0289C5DBB2BC001552 /* OCExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 923447ABCB30618ED854FAC8A6586720 /* OCExtensions-dummy.m */; };
 		AD024590F8488B31DACB17ACD96F9293 /* GeneralViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782868DF8385AA1B729C2C581570F082 /* GeneralViewExtension.swift */; };
-		BCA563AE200C086E8FE12472CFEE4246 /* GeneralColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A74F726AEC9D2A1009B7D6FC67CB76 /* GeneralColorExtensions.swift */; };
 		C0C4FFDA7D8FD422D9A214C6236FC829 /* LayerViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55572122F13CE53ED55D481FE21A2C7B /* LayerViewExtension.swift */; };
 		C158665C28151876DEAD0CEF4743A154 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		EE0A72DA788133452D06EBB7151A79D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
@@ -37,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		1C7BE6DFA13976B2395639F62D465F60 /* Pods-OCExtensions_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCExtensions_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2D4A355B1D6116DF00A6FAA6 /* GeneralColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneralColorExtensions.swift; path = Color/GeneralColorExtensions.swift; sourceTree = "<group>"; };
 		2FF374394B28C32487528AAA95A5529B /* Pods-OCExtensions_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCExtensions_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		306F9233AA034A6C09E114E53A10E0E4 /* Pods-OCExtensions_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OCExtensions_Tests-resources.sh"; sourceTree = "<group>"; };
 		3293132E1139806BFEA4DF6CC0EB65F2 /* GeneralViewControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GeneralViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -72,7 +73,6 @@
 		D6DEC5BB0FE3D201199C312907C34EF6 /* Pods-OCExtensions_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OCExtensions_Tests-dummy.m"; sourceTree = "<group>"; };
 		DF53C97B992BCC2C8BA7CB9B482E88B3 /* BadgeViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BadgeViewExtension.swift; sourceTree = "<group>"; };
 		E1426CC6088D734E0431904A33146A24 /* Pods-OCExtensions_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OCExtensions_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		E2A74F726AEC9D2A1009B7D6FC67CB76 /* GeneralColorExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GeneralColorExtensions.swift; sourceTree = "<group>"; };
 		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -111,6 +111,14 @@
 				3293132E1139806BFEA4DF6CC0EB65F2 /* GeneralViewControllerExtension.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2D4A355A1D6116D000A6FAA6 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				2D4A355B1D6116DF00A6FAA6 /* GeneralColorExtensions.swift */,
+			);
+			name = Color;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -230,7 +238,7 @@
 		A7803FF3D2E6D226275F3035A30B3D2A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E2A74F726AEC9D2A1009B7D6FC67CB76 /* GeneralColorExtensions.swift */,
+				2D4A355A1D6116D000A6FAA6 /* Color */,
 				8DD348BE943FFA4184969DA8938C65DE /* Image */,
 				B18A08EA5720A31FBD61234BAE703A1C /* View */,
 				1D2E2ED4C25EF01BB97018C62B879F49 /* ViewController */,
@@ -381,9 +389,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5506379D87DDCF762740BAD977580350 /* BadgeViewExtension.swift in Sources */,
-				BCA563AE200C086E8FE12472CFEE4246 /* GeneralColorExtensions.swift in Sources */,
 				0931EB9133DD27885BE095204B12F3D9 /* GeneralImageExtension.swift in Sources */,
 				559EC4F93888A0C87CBB840BFF18F9F2 /* GeneralViewControllerExtension.swift in Sources */,
+				2D4A355C1D6116DF00A6FAA6 /* GeneralColorExtensions.swift in Sources */,
 				AD024590F8488B31DACB17ACD96F9293 /* GeneralViewExtension.swift in Sources */,
 				C0C4FFDA7D8FD422D9A214C6236FC829 /* LayerViewExtension.swift in Sources */,
 				A309EED46FAB0E0289C5DBB2BC001552 /* OCExtensions-dummy.m in Sources */,
