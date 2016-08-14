@@ -41,4 +41,14 @@ public extension UIViewController {
         }
     }
     
+    public func presentViewController(viewController: UIViewController) {
+        presentViewController(viewController, animated: true, completion: nil)
+    }
+    
+    public func pushViewController(viewController: UIViewController) {
+        if let navigationController = self as? UINavigationController ?? navigationController {
+            navigationController.pushViewController(viewController, animated: true)
+        }
+    }
+    
 }
