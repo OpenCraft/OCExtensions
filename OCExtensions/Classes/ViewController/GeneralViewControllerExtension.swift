@@ -29,5 +29,16 @@ public extension UIViewController {
         
         return topMost
     }
+ 
+    public func popViewControllers(numberOfPops: Int, animated: Bool = true) {
+        if let navigationController = self as? UINavigationController ?? navigationController {
+            var index = navigationController.viewControllers.count - 1 - numberOfPops
+            if index < 0 {
+                index = 0
+            }
+            let viewController = navigationController.viewControllers[index]
+            navigationController.popToViewController(viewController, animated: animated)
+        }
+    }
     
 }
