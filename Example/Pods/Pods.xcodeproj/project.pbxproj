@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0931EB9133DD27885BE095204B12F3D9 /* GeneralImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C0128A713F96DFA0608B06011EEF6D /* GeneralImageExtension.swift */; };
 		2D4A355C1D6116DF00A6FAA6 /* GeneralColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4A355B1D6116DF00A6FAA6 /* GeneralColorExtensions.swift */; };
+		2DD75CFD1D611EEA007A86D8 /* GeneralTextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD75CFC1D611EEA007A86D8 /* GeneralTextFieldExtensions.swift */; };
 		46AC3F6CFCAD9EF0CB675F1D47110910 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		4B78373B8385627B1987393401B5F0EF /* Pods-OCExtensions_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAF9E2E1FB12CBF7FA3C1C52762A676 /* Pods-OCExtensions_Example-dummy.m */; };
 		5506379D87DDCF762740BAD977580350 /* BadgeViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF53C97B992BCC2C8BA7CB9B482E88B3 /* BadgeViewExtension.swift */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		1C7BE6DFA13976B2395639F62D465F60 /* Pods-OCExtensions_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCExtensions_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2D4A355B1D6116DF00A6FAA6 /* GeneralColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneralColorExtensions.swift; path = Color/GeneralColorExtensions.swift; sourceTree = "<group>"; };
+		2DD75CFC1D611EEA007A86D8 /* GeneralTextFieldExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneralTextFieldExtensions.swift; path = TextField/GeneralTextFieldExtensions.swift; sourceTree = "<group>"; };
 		2FF374394B28C32487528AAA95A5529B /* Pods-OCExtensions_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCExtensions_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		306F9233AA034A6C09E114E53A10E0E4 /* Pods-OCExtensions_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OCExtensions_Tests-resources.sh"; sourceTree = "<group>"; };
 		3293132E1139806BFEA4DF6CC0EB65F2 /* GeneralViewControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GeneralViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -119,6 +121,14 @@
 				2D4A355B1D6116DF00A6FAA6 /* GeneralColorExtensions.swift */,
 			);
 			name = Color;
+            sourceTree = "<group>";
+        };
+		2DD75CFB1D611EAF007A86D8 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				2DD75CFC1D611EEA007A86D8 /* GeneralTextFieldExtensions.swift */,
+			);
+			name = TextField;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -242,6 +252,7 @@
 				8DD348BE943FFA4184969DA8938C65DE /* Image */,
 				B18A08EA5720A31FBD61234BAE703A1C /* View */,
 				1D2E2ED4C25EF01BB97018C62B879F49 /* ViewController */,
+				2DD75CFB1D611EAF007A86D8 /* TextField */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -392,6 +403,7 @@
 				0931EB9133DD27885BE095204B12F3D9 /* GeneralImageExtension.swift in Sources */,
 				559EC4F93888A0C87CBB840BFF18F9F2 /* GeneralViewControllerExtension.swift in Sources */,
 				2D4A355C1D6116DF00A6FAA6 /* GeneralColorExtensions.swift in Sources */,
+				2DD75CFD1D611EEA007A86D8 /* GeneralTextFieldExtensions.swift in Sources */,
 				AD024590F8488B31DACB17ACD96F9293 /* GeneralViewExtension.swift in Sources */,
 				C0C4FFDA7D8FD422D9A214C6236FC829 /* LayerViewExtension.swift in Sources */,
 				A309EED46FAB0E0289C5DBB2BC001552 /* OCExtensions-dummy.m in Sources */,
