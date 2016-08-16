@@ -10,6 +10,19 @@ import UIKit
 
 public extension UIViewController {
     
+    public static var topMostViewController: UIViewController? {
+        var topMost = UIApplication.sharedApplication().keyWindow?.rootViewController
+        while let presented = topMost?.presentedViewController {
+            topMost = presented
+        }
+        
+        return topMost
+    }
+    
+    public var isVisible: Bool {
+        return self.isViewLoaded() && self.view.window != nil
+    }
+    
     public func showAlert(message: String, title: String? = nil, okHandler: ((UIAlertAction) -> Void)? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: okHandler))
@@ -19,15 +32,6 @@ public extension UIViewController {
     public func addChildViewController(viewController: UIViewController, inContainerView container: UIView) {
         addChildViewController(viewController)
         viewController.view.fillInSuperview(container)
-    }
-    
-    public static var topMostViewController: UIViewController? {
-        var topMost = UIApplication.sharedApplication().keyWindow?.rootViewController
-        while let presented = topMost?.presentedViewController {
-            topMost = presented
-        }
-        
-        return topMost
     }
  
     public func popViewControllers(numberOfPops: Int, animated: Bool = true) {
