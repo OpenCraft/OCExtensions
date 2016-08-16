@@ -1,6 +1,6 @@
 # OCExtensions
 
-[![CI Status](http://img.shields.io/travis/Henrique Morbin/OCExtensions.svg?style=flat)](https://travis-ci.org/Henrique Morbin/OCExtensions)
+[![Build Status](https://www.bitrise.io/app/e583054e2704b298.svg?token=4dghJ7Cn1-PWA5JJW0nQDQ)](https://www.bitrise.io/app/e583054e2704b298)
 [![Version](https://img.shields.io/cocoapods/v/OCExtensions.svg?style=flat)](http://cocoapods.org/pods/OCExtensions)
 [![License](https://img.shields.io/cocoapods/l/OCExtensions.svg?style=flat)](http://cocoapods.org/pods/OCExtensions)
 [![Platform](https://img.shields.io/cocoapods/p/OCExtensions.svg?style=flat)](http://cocoapods.org/pods/OCExtensions)
