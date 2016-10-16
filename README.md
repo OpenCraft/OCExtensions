@@ -19,6 +19,8 @@ pod 'OCExtensions'
 - [Image](#image)
 - [TextField](#text-field)
 - [View](#view)
+ - [Badge](#badge)
+ - [Layer](#layer)
 - [ViewController](#view-controller)
 
 ### Color
@@ -51,6 +53,16 @@ var isEmpty: Bool
 ```
 
 ### View
+```swift
+// TODO: documentation
+```
+
+#### Badge
+```swift
+// TODO: documentation
+```
+
+#### Layer
 ```swift
 // TODO: documentation
 ```
