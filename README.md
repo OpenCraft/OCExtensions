@@ -16,10 +16,10 @@ pod 'OCExtensions'
 
 ## Documentation
 - [Color](#color)
-- [Image](#)
-- [TextField](#)
-- [View](#)
-- [ViewController](#)
+- [Image](#image)
+- [TextField](#text-field)
+- [View](#view)
+- [ViewController](#view-controller)
 
 ### Color
 ```swift
@@ -29,6 +29,31 @@ func image(withSize size: CGSize? = nil) -> UIImage?
 
 // Example
 let redImage = UIColor.redColor().image()
+```
+
+### Image
+```swift
+// Instantiate an image with a color.
+// Default size: 1x1px
+convenience init?(color: UIColor, size: CGSize? = nil)
+
+// Example
+let redImage = UIImage(color: UIColor.redColor())
+```
+
+### TextField
+```swift
+// TODO: documentation
+```
+
+### View
+```swift
+// TODO: documentation
+```
+
+### ViewController
+```swift
+// TODO: documentation
 ```
 
 ## Author
