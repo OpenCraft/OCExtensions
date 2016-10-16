@@ -43,7 +43,11 @@ let redImage = UIImage(color: UIColor.redColor())
 
 ### TextField
 ```swift
-// TODO: documentation
+// Returns a non-optional String value.
+var textValue: String
+
+// Check if text input is empty.
+var isEmpty: Bool
 ```
 
 ### View
