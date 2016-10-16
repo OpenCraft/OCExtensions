@@ -5,19 +5,30 @@
 [![License](https://img.shields.io/cocoapods/l/OCExtensions.svg?style=flat)](http://cocoapods.org/pods/OCExtensions)
 [![Platform](https://img.shields.io/cocoapods/p/OCExtensions.svg?style=flat)](http://cocoapods.org/pods/OCExtensions)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
 ## Installation
 
 OCExtensions is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "OCExtensions"
+pod 'OCExtensions'
+```
+
+## Documentation
+- [Color](#color)
+- [Image](#)
+- [TextField](#)
+- [View](#)
+- [ViewController](#)
+
+### Color
+```swift
+// Get an image representation from a color.
+// Default size: 1x1px
+func image(withSize size: CGSize? = nil) -> UIImage?
+
+// Example
+let redImage = UIColor.redColor().image()
 ```
 
 ## Author
