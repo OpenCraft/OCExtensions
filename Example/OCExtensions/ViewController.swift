@@ -12,6 +12,15 @@ import OCExtensions
 class ViewController: UIViewController {
 
     @IBOutlet weak var cardboardImage: UIImageView!
+    @IBOutlet weak var navBar: UINavigationBar!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        navBar.topItem?.rightBarButtonItem = UIBarButtonItemClosure(title: "Touch me") {
+            self.showAlert("I'm a closure bar button item.")
+        }
+    }
     
     @IBAction func addBadgeTouched(_ sender: AnyObject) {
         cardboardImage.badgeCount = 1
