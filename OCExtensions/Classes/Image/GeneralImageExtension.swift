@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIImage {
     
-    convenience init?(color: UIColor, size: CGSize? = nil) {
+    convenience public init?(color: UIColor, size: CGSize? = nil) {
         
         let size = size ?? CGSize(width: 1, height: 1)
         let rect = CGRect(origin: CGPoint.zero, size: size)

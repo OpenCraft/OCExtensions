@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         cardboardImage.badgeCount = 1
         cardboardImage.badgeSize = 36
         cardboardImage.badgeOffset = CGPoint(x: -10, y: 10)
+        print(cardboardImage.scaledImageSize)
     }
 
 }
