@@ -17,9 +17,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navBar.topItem?.rightBarButtonItem = UIBarButtonItemClosure(title: "Touch me") {
+        navBar.topItem?.setLeftBarButtonItem(title: "Touch me") {
             self.showAlert("I'm a closure bar button item.")
         }
+        
+        navBar.topItem?.setRightBarButtonItem(image: #imageLiteral(resourceName: "chat-manager")) {
+            self.showAlert("I'm a other closure bar button item.")
+        }
+
     }
     
     @IBAction func addBadgeTouched(_ sender: AnyObject) {
