@@ -11,7 +11,7 @@ import UIKit
 public extension UIViewController {
     
     public static var topMostViewController: UIViewController? {
-        var topMost = UIApplication.sharedApplication().keyWindow?.rootViewController
+        var topMost = UIApplication.shared.keyWindow?.rootViewController
         while let presented = topMost?.presentedViewController {
             topMost = presented
         }
@@ -20,21 +20,21 @@ public extension UIViewController {
     }
     
     public var isVisible: Bool {
-        return self.isViewLoaded() && self.view.window != nil
+        return self.isViewLoaded && self.view.window != nil
     }
     
-    public func showAlert(message: String, title: String? = nil, okHandler: ((UIAlertAction) -> Void)? = nil) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: okHandler))
-        presentViewController(alert, animated: true, completion: nil)
+    public func showAlert(_ message: String, title: String? = nil, okHandler: ((UIAlertAction) -> Void)? = nil) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: okHandler))
+        present(alert, animated: true, completion: nil)
     }
     
-    public func addChildViewController(viewController: UIViewController, inContainerView container: UIView) {
+    public func addChildViewController(_ viewController: UIViewController, inContainerView container: UIView) {
         addChildViewController(viewController)
         viewController.view.fillInSuperview(container)
     }
  
-    public func popViewControllers(numberOfPops: Int, animated: Bool = true) {
+    public func popViewControllers(_ numberOfPops: Int, animated: Bool = true) {
         if let navigationController = self as? UINavigationController ?? navigationController {
             var index = navigationController.viewControllers.count - 1 - numberOfPops
             if index < 0 {
@@ -45,11 +45,11 @@ public extension UIViewController {
         }
     }
     
-    public func presentViewController(viewController: UIViewController) {
-        presentViewController(viewController, animated: true, completion: nil)
+    public func presentViewController(_ viewController: UIViewController) {
+        present(viewController, animated: true, completion: nil)
     }
     
-    public func pushViewController(viewController: UIViewController) {
+    public func pushViewController(_ viewController: UIViewController) {
         if let navigationController = self as? UINavigationController ?? navigationController {
             navigationController.pushViewController(viewController, animated: true)
         }

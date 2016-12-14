@@ -10,8 +10,8 @@ import UIKit
 
 public extension UIView {
     
-    public static func loadFromNibNamed(nibNamed: String, bundle: NSBundle? = nil) -> UIView? {
-        return UINib(nibName: nibNamed, bundle: bundle).instantiateWithOwner(nil, options: nil)[0] as? UIView
+    public static func loadFromNibNamed(_ nibNamed: String, bundle: Bundle? = nil) -> UIView? {
+        return UINib(nibName: nibNamed, bundle: bundle).instantiate(withOwner: nil, options: nil)[0] as? UIView
     }
     
     public func fillSuperview() {
@@ -19,19 +19,19 @@ public extension UIView {
             let subview = self
             subview.translatesAutoresizingMaskIntoConstraints = false
             
-            superview.addConstraint(NSLayoutConstraint(item: subview, attribute: .Top, relatedBy: .Equal, toItem: superview, attribute: .Top,
+            superview.addConstraint(NSLayoutConstraint(item: subview, attribute: .top, relatedBy: .equal, toItem: superview, attribute: .top,
                 multiplier: 1.0, constant: 0.0))
-            superview.addConstraint(NSLayoutConstraint(item: subview, attribute: .Leading, relatedBy: .Equal, toItem: superview, attribute: .Leading,
+            superview.addConstraint(NSLayoutConstraint(item: subview, attribute: .leading, relatedBy: .equal, toItem: superview, attribute: .leading,
                 multiplier: 1.0, constant: 0.0))
-            superview.addConstraint(NSLayoutConstraint(item: superview, attribute: .Bottom, relatedBy: .Equal, toItem: subview, attribute: .Bottom,
+            superview.addConstraint(NSLayoutConstraint(item: superview, attribute: .bottom, relatedBy: .equal, toItem: subview, attribute: .bottom,
                 multiplier: 1.0, constant: 0.0))
-            superview.addConstraint(NSLayoutConstraint(item: superview, attribute: .Trailing, relatedBy: .Equal, toItem: subview, attribute: .Trailing,
+            superview.addConstraint(NSLayoutConstraint(item: superview, attribute: .trailing, relatedBy: .equal, toItem: subview, attribute: .trailing,
                 multiplier: 1.0, constant: 0.0))
         }
     }
     
-    public func fillInSuperview(superview: UIView) {
-        if superview.subviews.indexOf(self) == nil {
+    public func fillInSuperview(_ superview: UIView) {
+        if superview.subviews.index(of: self) == nil {
             superview.addSubview(self)
         }
         
@@ -43,18 +43,18 @@ public extension UIView {
             let subview = self
             subview.translatesAutoresizingMaskIntoConstraints = false
             
-            superview.addConstraint(NSLayoutConstraint(item: subview, attribute: .CenterX, relatedBy: .Equal, toItem: superview, attribute: .CenterX, multiplier: 1, constant: 0))
-            superview.addConstraint(NSLayoutConstraint(item: subview, attribute: .CenterY, relatedBy: .Equal, toItem: superview, attribute: .CenterY, multiplier: 1, constant: 0))
+            superview.addConstraint(NSLayoutConstraint(item: subview, attribute: .centerX, relatedBy: .equal, toItem: superview, attribute: .centerX, multiplier: 1, constant: 0))
+            superview.addConstraint(NSLayoutConstraint(item: subview, attribute: .centerY, relatedBy: .equal, toItem: superview, attribute: .centerY, multiplier: 1, constant: 0))
             
             if let size = size {
-                subview.addConstraint(NSLayoutConstraint(item: subview, attribute: .Width, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: size.width))
-                subview.addConstraint(NSLayoutConstraint(item: subview, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: size.height))
+                subview.addConstraint(NSLayoutConstraint(item: subview, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: size.width))
+                subview.addConstraint(NSLayoutConstraint(item: subview, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: size.height))
             }
         }
     }
     
-    public func centerInSuperview(superview: UIView, withSize size: CGSize?) {
-        if superview.subviews.indexOf(self) == nil {
+    public func centerInSuperview(_ superview: UIView, withSize size: CGSize?) {
+        if superview.subviews.index(of: self) == nil {
             superview.addSubview(self)
         }
         

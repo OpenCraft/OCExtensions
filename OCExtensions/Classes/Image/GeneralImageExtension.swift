@@ -23,8 +23,8 @@ public extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         
-        if let cgImage = image.CGImage {
-            self.init(CGImage: cgImage)
+        if let cgImage = image?.cgImage {
+            self.init(cgImage: cgImage)
         } else {
             return nil
         }

@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var cardboardImage: UIImageView!
     
-    @IBAction func addBadgeTouched(sender: AnyObject) {
+    @IBAction func addBadgeTouched(_ sender: AnyObject) {
         cardboardImage.badgeCount = 1
         cardboardImage.badgeSize = 36
         cardboardImage.badgeOffset = CGPoint(x: -10, y: 10)
