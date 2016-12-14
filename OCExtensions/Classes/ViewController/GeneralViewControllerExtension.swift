@@ -34,7 +34,7 @@ public extension UIViewController {
         viewController.view.fillInSuperview(container)
     }
  
-    public func popViewControllers(_ numberOfPops: Int, animated: Bool = true) {
+    public func popViewControllers(numberOfPops numberOfPops: Int, animated: Bool = true) {
         if let navigationController = self as? UINavigationController ?? navigationController {
             var index = navigationController.viewControllers.count - 1 - numberOfPops
             if index < 0 {
