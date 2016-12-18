@@ -219,6 +219,7 @@
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = U4D7MD5WUL;
 						LastSwiftMigration = 0810;
+						ProvisioningStyle = Manual;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -508,6 +509,8 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "aebd6a7b-b9bf-44cf-982a-e4d104d56895";
+				PROVISIONING_PROFILE_SPECIFIER = "fastlane-development-ocextensions";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -525,6 +528,8 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "aebd6a7b-b9bf-44cf-982a-e4d104d56895";
+				PROVISIONING_PROFILE_SPECIFIER = "fastlane-development-ocextensions";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
