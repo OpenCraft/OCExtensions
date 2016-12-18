@@ -30,6 +30,7 @@
 /* Begin PBXFileReference section */
 		0273D1FE8C1F80B9E29FEDA4 /* Pods_OCExtensions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCExtensions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2434B212A5874E843AA9091F /* Pods-OCExtensions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCExtensions_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCExtensions_Tests/Pods-OCExtensions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D583C7C1E07429D002A11C0 /* Fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fastlane; sourceTree = "<group>"; };
 		54B8C8836E7EEB60E72775D3 /* Pods-OCExtensions_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCExtensions_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCExtensions_Tests/Pods-OCExtensions_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* OCExtensions_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCExtensions_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -146,6 +147,7 @@
 				A54E7B7F19EC231BCA79D232 /* OCExtensions.podspec */,
 				A0387C7E7C15C0CA696B1966 /* README.md */,
 				7B29D1B0FCF066ED5F5F58A8 /* LICENSE */,
+				2D583C7C1E07429D002A11C0 /* Fastlane */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
