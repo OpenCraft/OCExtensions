@@ -30,13 +30,9 @@ public extension UIImage {
         }
     }
     
-    func inset(by inset: CGFloat) -> UIImage {
+    func insets(to insetable: Insetable) -> UIImage {
         
-        let insets = UIEdgeInsets(top: inset, left: inset, bottom: inset, right: inset)
-        return setInsets(insets: insets)
-    }
-    
-    func setInsets(insets: UIEdgeInsets) -> UIImage {
+        let insets = insetable.getEdgeInset()
         
         let width = size.width + insets.left + insets.right
         let height = size.height + insets.top + insets.bottom
@@ -53,4 +49,20 @@ public extension UIImage {
         return imageWithInsets
     }
     
+}
+
+public protocol Insetable {
+    func getEdgeInset() -> UIEdgeInsets
+}
+
+extension CGFloat: Insetable {
+    public func getEdgeInset() -> UIEdgeInsets {
+        return UIEdgeInsets(top: self, left: self, bottom: self, right: self)
+    }
+}
+
+extension UIEdgeInsets: Insetable {
+    public func getEdgeInset() -> UIEdgeInsets {
+        return self
+    }
 }
