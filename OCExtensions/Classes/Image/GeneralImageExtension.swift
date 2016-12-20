@@ -30,4 +30,27 @@ public extension UIImage {
         }
     }
     
+    func inset(by inset: CGFloat) -> UIImage {
+        
+        let insets = UIEdgeInsets(top: inset, left: inset, bottom: inset, right: inset)
+        return setInsets(insets: insets)
+    }
+    
+    func setInsets(insets: UIEdgeInsets) -> UIImage {
+        
+        let width = size.width + insets.left + insets.right
+        let height = size.height + insets.top + insets.bottom
+        let newSize = CGSize(width: width, height: height)
+        
+        UIGraphicsBeginImageContextWithOptions(newSize, false, self.scale)
+        
+        let origin = CGPoint(x: insets.left, y: insets.top)
+        draw(at: origin)
+        
+        let imageWithInsets = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        
+        return imageWithInsets
+    }
+    
 }
