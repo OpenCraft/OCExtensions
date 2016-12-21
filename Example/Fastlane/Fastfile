@@ -17,7 +17,7 @@ lane :development_keys do
       output_path: certificates_path,
       username: apple_account_username,
       team_id: apple_account_team,
-      force: false,
+# force: true,
   )
   produce(
       username: apple_account_username,

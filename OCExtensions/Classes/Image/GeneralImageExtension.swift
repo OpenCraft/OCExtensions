@@ -15,13 +15,13 @@ public extension UIImage {
         let size = size ?? CGSize(width: 1, height: 1)
         let rect = CGRect(origin: CGPoint.zero, size: size)
         
-        UIGraphicsBeginImageContext(size);
+        UIGraphicsBeginImageContext(size)
         let path = UIBezierPath(rect: rect)
         color.setFill()
         path.fill()
         
-        let image = UIGraphicsGetImageFromCurrentImageContext();
-        UIGraphicsEndImageContext();
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
         
         if let cgImage = image?.cgImage {
             self.init(cgImage: cgImage)
