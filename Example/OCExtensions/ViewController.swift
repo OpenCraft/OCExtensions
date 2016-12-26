@@ -24,7 +24,6 @@ class ViewController: UIViewController {
         navBar.topItem?.setRightBarButtonItem(image: #imageLiteral(resourceName: "chat-manager")) {
             self.showAlert("I'm a other closure bar button item.")
         }
-
     }
     
     @IBAction func addBadgeTouched(_ sender: AnyObject) {
