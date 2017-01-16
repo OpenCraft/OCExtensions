@@ -9,6 +9,7 @@
 import Foundation
 
 extension String {
+    
     func sizeOfText(for font: UIFont, width: Int) -> CGSize{
         return NSString(string: self).sizeOfText(for: font, width: width)
     }
