@@ -16,7 +16,7 @@ public extension UILabel {
         attributedText = NSMutableAttributedString(string: title, attributes: attributedText?.attributes(at: 0, effectiveRange: &range))
     }
     
-    var textValue: String {
+    public var textValue: String {
         return self.text ?? ""
     }
 }

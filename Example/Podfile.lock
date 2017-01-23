@@ -1,15 +1,15 @@
 PODS:
-  - OCExtensions (1.7.0)
+  - OCExtensions (1.8.0)
 
 DEPENDENCIES:
   - OCExtensions (from `../`)
 
 EXTERNAL SOURCES:
   OCExtensions:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  OCExtensions: 2577b3d5b57d3883986d31a577c90e8adade8142
+  OCExtensions: 16995ff02f8d1e16de9da7f3c3441978d0fce2a6
 
 PODFILE CHECKSUM: f049578b21e0c8e602e186cdd1e6832741239751
 
