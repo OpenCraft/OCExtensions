@@ -20,6 +20,12 @@ public extension UITextField {
     
     public var paddingLeft: CGFloat {
         set {
+            if let searchBarClass = NSClassFromString("UISearchBarTextField") {
+                if self.isKind(of: searchBarClass) {
+                    return
+                }
+            }
+        
             leftView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: newValue, height: 1.0))
             leftViewMode = .always
         }
@@ -30,6 +36,12 @@ public extension UITextField {
     
     public var paddingRight: CGFloat {
         set {
+            if let searchBarClass = NSClassFromString("UISearchBarTextField") {
+                if self.isKind(of: searchBarClass) {
+                    return
+                }
+            }
+            
             rightView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: newValue, height: 1.0))
             rightViewMode = .always
         }
