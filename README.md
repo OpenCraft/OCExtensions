@@ -55,14 +55,14 @@ let redImage = UIImage(color: UIColor.redColor())
 // Returns a non-optional String value.
 var textValue: String
 
+// Check if text input is empty.
+var isEmpty: Bool
+```
+
 ### Layer
 ```swift
 // Intantiate a Gradient Layer passing only the frame, orientation and color array
 convenience init(frame: CGRect, orientation: GradientOrientation, colors: [CGColor])
-```
-
-// Check if text input is empty.
-var isEmpty: Bool
 ```
 
 ### View
