@@ -59,17 +59,18 @@ var textValue: String
 var isEmpty: Bool
 ```
 
+### Layer
+```swift
+// Intantiate a Gradient Layer passing only the frame, orientation and color array
+convenience init(frame: CGRect, orientation: GradientOrientation, colors: [CGColor])
+```
+
 ### View
 ```swift
 // TODO: documentation
 ```
 
 #### Badge
-```swift
-// TODO: documentation
-```
-
-#### Layer
 ```swift
 // TODO: documentation
 ```
