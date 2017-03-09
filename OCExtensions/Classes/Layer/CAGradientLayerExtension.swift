@@ -31,7 +31,7 @@ public enum GradientOrientation {
 
 public extension CAGradientLayer {
     
-    convenience init(frame: CGRect, orientation: GradientOrientation, colors: [CGColor]) {
+    public convenience init(frame: CGRect, orientation: GradientOrientation, colors: [CGColor]) {
         let layer = CAGradientLayer()
         layer.colors = colors
         layer.startPoint = orientation.startPoint
