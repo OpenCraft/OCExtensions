@@ -71,7 +71,8 @@ var isEmpty: Bool
 
 #### Layer
 ```swift
-// TODO: documentation
+// Intantiate a Gradient Layer passing only the frame, orientation and color array
+convenience init(frame: CGRect, orientation: GradientOrientation, colors: [CGColor])
 ```
 
 ### ViewController
