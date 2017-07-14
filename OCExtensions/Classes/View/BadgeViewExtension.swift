@@ -10,6 +10,8 @@ import UIKit
 
 private let defaultBadgeOffset = CGPoint(x: 0, y: 0)
 private let defaultBadgeSize: CGFloat = 20
+private let defaultBadgeColor = UIColor.red
+private let defaultBadgeFont = UIFont.systemFont(ofSize: defaultBadgeSize/2)
 private let tagIdentifier = 998877
 
 public extension UIView {
@@ -46,6 +48,24 @@ public extension UIView {
         }
     }
     
+    public var badgeColor: UIColor? {
+        get {
+            return self.badgeColor
+        }
+        set {
+            badgeInstance.backgroundColor = newValue ?? defaultBadgeColor
+        }
+    }
+    
+    public var badgeFont: UIFont? {
+        get {
+            return self.badgeFont
+        }
+        set {
+            badgeInstance.font = newValue ?? defaultBadgeFont
+        }
+    }
+    
     fileprivate var badgeInstance: UILabel {
         get {
             guard let badge = self.viewWithTag(tagIdentifier) as? UILabel else {
@@ -53,9 +73,9 @@ public extension UIView {
                 
                 badge.tag = tagIdentifier
                 badge.text = ""
-                badge.backgroundColor = UIColor.red
+                badge.backgroundColor = defaultBadgeColor
                 badge.textColor = UIColor.white
-                badge.font = UIFont.systemFont(ofSize: defaultBadgeSize/2)
+                badge.font = defaultBadgeFont
                 badge.textAlignment = .center
                 badge.layer.cornerRadius = defaultBadgeSize/2
                 badge.layer.masksToBounds = true
