@@ -35,15 +35,19 @@ public extension UIImage {
             imageWidth = imageHeight
         }
         
+        guard let cgImage = cgImage else {
+            return nil
+        }
+        
         let targetSize = CGSize(width: imageWidth, height: imageHeight)
-        let refWidth: CGFloat = CGFloat(cgImage!.width)
-        let refHeight: CGFloat = CGFloat(cgImage!.height)
+        let refWidth: CGFloat = CGFloat(cgImage.width)
+        let refHeight: CGFloat = CGFloat(cgImage.height)
         
         let x = (refWidth - targetSize.width) / 2
         let y = (refHeight - targetSize.height) / 2
         
         let cropRect = CGRect(x: x, y: y, width: targetSize.height, height: targetSize.width)
-        if let imageRef = self.cgImage?.cropping(to: cropRect) {
+        if let imageRef = cgImage.cropping(to: cropRect) {
             return UIImage(cgImage: imageRef, scale: 0, orientation: self.imageOrientation)
         }
         
@@ -89,7 +93,7 @@ public extension UIImage {
         return imageWithInsets
     }
     
-    func resizeImage(_ targetSize: CGSize) -> UIImage? {
+    func resize(to targetSize: CGSize) -> UIImage? {
         let widthRatio  = targetSize.width  / size.width
         let heightRatio = targetSize.height / size.height
         
