@@ -10,6 +10,50 @@ import UIKit
 
 public extension UIImage {
     
+    var isPortrait: Bool { return size.height > size.width }
+    var isLandscape: Bool { return size.width > size.height }
+    var breadth: CGFloat { return min(size.width, size.height) }
+    var breadthSize: CGSize { return CGSize(width: breadth, height: breadth) }
+    var breadthRect: CGRect { return CGRect(origin: .zero, size: breadthSize) }
+    
+    var circleMasked: UIImage? {
+        UIGraphicsBeginImageContextWithOptions(breadthSize, false, scale)
+        defer { UIGraphicsEndImageContext() }
+        guard let cgImage = cgImage?.cropping(to: CGRect(origin: CGPoint(x: isLandscape ? floor((size.width - size.height) / 2) : 0, y: isPortrait  ? floor((size.height - size.width) / 2) : 0), size: breadthSize)) else { return nil }
+        UIBezierPath(ovalIn: breadthRect).addClip()
+        UIImage(cgImage: cgImage, scale: 1, orientation: imageOrientation).draw(in: breadthRect)
+        return UIGraphicsGetImageFromCurrentImageContext()
+    }
+    
+    var squareCropped: UIImage? {
+        var imageHeight = size.height
+        var imageWidth = size.width
+        
+        if isPortrait {
+            imageHeight = imageWidth
+        } else {
+            imageWidth = imageHeight
+        }
+        
+        guard let cgImage = cgImage else {
+            return nil
+        }
+        
+        let targetSize = CGSize(width: imageWidth, height: imageHeight)
+        let refWidth: CGFloat = CGFloat(cgImage.width)
+        let refHeight: CGFloat = CGFloat(cgImage.height)
+        
+        let x = (refWidth - targetSize.width) / 2
+        let y = (refHeight - targetSize.height) / 2
+        
+        let cropRect = CGRect(x: x, y: y, width: targetSize.height, height: targetSize.width)
+        if let imageRef = cgImage.cropping(to: cropRect) {
+            return UIImage(cgImage: imageRef, scale: 0, orientation: self.imageOrientation)
+        }
+        
+        return nil
+    }
+    
     convenience public init?(color: UIColor, size: CGSize? = nil) {
         
         let size = size ?? CGSize(width: 1, height: 1)
@@ -49,6 +93,26 @@ public extension UIImage {
         return imageWithInsets
     }
     
+    func resize(to targetSize: CGSize) -> UIImage? {
+        let widthRatio  = targetSize.width  / size.width
+        let heightRatio = targetSize.height / size.height
+        
+        var newSize: CGSize
+        if isLandscape {
+            newSize = CGSize(width: size.width * heightRatio, height: size.height * heightRatio)
+        } else {
+            newSize = CGSize(width: size.width * widthRatio, height: size.height * widthRatio)
+        }
+        
+        let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
+        
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
+        self.draw(in: rect)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage
+    }
 }
 
 public protocol Insetable {
