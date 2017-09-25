@@ -94,24 +94,14 @@ public extension UIImage {
     }
     
     func resize(to targetSize: CGSize) -> UIImage? {
-        let widthRatio  = targetSize.width  / size.width
-        let heightRatio = targetSize.height / size.height
+        UIGraphicsBeginImageContextWithOptions(targetSize, false, 0.0)
         
-        var newSize: CGSize
-        if isLandscape {
-            newSize = CGSize(width: size.width * heightRatio, height: size.height * heightRatio)
-        } else {
-            newSize = CGSize(width: size.width * widthRatio, height: size.height * widthRatio)
-        }
+        let imageRect = CGRect(origin: CGPoint.zero, size: targetSize)
+        draw(in: imageRect)
         
-        let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
-        
-        UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
-        self.draw(in: rect)
-        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
-        return newImage
+        return scaledImage
     }
 }
 
